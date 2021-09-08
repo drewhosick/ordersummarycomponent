@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: hsl(225, 100%, 94%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.container {
+    width: 100%;
+}
+
+.innerContainer {
+    position:relative;
+    background-image: url("images/illustration-hero.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    width: 450px;
+    height: 700px;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 220px;
+    padding-top: 30px;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+p {
+    padding: 20px 80px;
+    font-size: 16px;
+    line-height: 24px;
+
+    
+}
+
+.box {
+    margin: auto;
+    display:flex;
+    position: relative;
+    width: 350px;
+    justify-content: flex-start;
+    background-color: hsl(225, 100%, 98%);
+    padding: 25px 10px 25px 20px;
+    align-content: center;    
+    border-radius: 10px;
+}
+
+.plan {
+    flex-grow: 2;
+    text-align: left;
+    padding-left: 25px;
+    max-width: 150px;
+    line-height: 25px;
+}
+
+span {
+    font-weight: 900;
+}
+
+div > a {
+    align-self: center;
+    text-align: right;
+    flex-grow: 5;
+    font-weight: 700;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.paymentButton {
+    background-color: hsl(245, 75%, 52%);
+    margin: auto;
+    margin-top: 30px;
+    width: 334px;
+    padding: 18px;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0px 25px 20px hsl(228, 76%, 93%);
+}
+
+.cancelOrder {
+    color:hsl(224, 23%, 55%);
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.attribution {
+    position: relative;
+    margin-top: 50px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
