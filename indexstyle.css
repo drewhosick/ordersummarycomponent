@@ -5,6 +5,7 @@
     margin:0;
     padding:0;
     font-family: 'Red Hat Display', sans-serif;
+    font-size: 62.5%;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     background-image: url("images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+    font-size: 1.6rem;
 
 }
 
@@ -25,6 +27,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: white;
+    font-size: 1.6rem;
     width: 450px;
     height: 700px;
     margin: auto;
@@ -37,16 +40,16 @@ body {
 h1 {
     margin-top: 220px;
     padding-top: 30px;
+    color: hsl(223, 47%, 23%);
     font-weight: 900;
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 p {
     padding: 20px 80px;
-    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.6rem;
     line-height: 24px;
-
-    
 }
 
 .box {
@@ -67,9 +70,12 @@ p {
     padding-left: 25px;
     max-width: 150px;
     line-height: 25px;
+    font-size: 1.6rem;
+    color: hsl(223, 47%, 23%);
 }
 
 span {
+    font-size: 1.6rem;
     font-weight: 900;
 }
 
@@ -78,8 +84,13 @@ div > a {
     text-align: right;
     flex-grow: 5;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1.5rem;
     padding-right: 10px;
+}
+
+div > a:hover {
+    color: hsl(244, 82%, 68%);
+    text-decoration: none;
 }
 
 .paymentButton {
@@ -89,23 +100,105 @@ div > a {
     width: 334px;
     padding: 18px;
     color: white;
+    font-size: 1.6rem;
     font-weight: 700;
     border-radius: 15px;
     box-shadow: 0px 25px 20px hsl(228, 76%, 93%);
 }
 
+.paymentButton:hover {
+    background-color: hsl(244, 82%, 68%);
+}
+
 .cancelOrder {
     color:hsl(224, 23%, 55%);
     margin-top: 30px;
+    font-size: 1.6rem;
     font-weight: 700;
+}
+
+.cancelOrder:hover {
+    color: hsl(223, 47%, 23%);
 }
 
 .attribution {
     position: relative;
     margin-top: 50px;
-    font-size: 11px;
+    font-size: 1.1rem;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:500px) {
+
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .innerContainer {
+        width: 90%;
+        height: auto;
+        padding-bottom: 7vw;
+    }
+
+    h1 {
+        margin-top: 50%;
+        font-size: 5.6vw; 
+    }
+    p {
+        padding: 20px 40px;
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    .box {
+        width: 80%;
+        justify-content: flex-start;
+        background-color: hsl(225, 100%, 98%);
+        padding: 1vw 1vw 1vw 1vw;
+        align-content: center;    
+        border-radius: 4vw;
+    }
+
+    .iconMusic {
+        align-self: center;
+        margin-left: 3%;
+    }
+    .iconMusic > img {
+        width: 100%;        
+    }
+
+    .plan {
+        padding-left: 5vw;
+        align-self: center;
+    }
+    .plan, span {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+    .box a {
+        font-size: 3.5vw;
+    }
+
+    .paymentButton {
+        margin: auto;
+        margin-top: 6vw;
+        width: 70%;
+        padding: 3vw 4vw;
+        color: white;
+        font-size: 3.5vw;
+        font-weight: 700;
+        border-radius: 4vw;
+        box-shadow: 0px 25px 20px hsl(228, 76%, 93%);
+    }
+
+    .cancelOrder {
+        font-size: 3.5vw
+    }
+    
 }
