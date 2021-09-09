@@ -61,7 +61,7 @@ p {
     background-color: hsl(225, 100%, 98%);
     padding: 25px 10px 25px 20px;
     align-content: center;    
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .plan {
@@ -153,13 +153,14 @@ div > a:hover {
         padding: 20px 40px;
         font-size: 4vw;
         line-height: 6vw;
+        color: hsl(224, 23%, 55%);
     }
 
     .box {
         width: 80%;
         justify-content: flex-start;
         background-color: hsl(225, 100%, 98%);
-        padding: 1vw 1vw 1vw 1vw;
+        padding: 4vw 1vw 4vw 1vw;
         align-content: center;    
         border-radius: 4vw;
     }
@@ -175,10 +176,15 @@ div > a:hover {
     .plan {
         padding-left: 5vw;
         align-self: center;
+        color: hsl(224, 23%, 55%);
     }
     .plan, span {
         font-size: 3.5vw;
         line-height: 5vw;
+    }
+
+    span {
+        color: hsl(223, 47%, 23%);
     }
 
     .box a {
